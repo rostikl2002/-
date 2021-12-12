@@ -1,0 +1,147 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  font-family: 'Raleway', sans-serif;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.logo{ 
+ height: 150px;
+width: 100%;
+display: flex;
+justify-content:center;
+box-shadow: 2px 2px 6px 2px lightgrey;
+  
+}
+.graficlogo{
+ height: 150px;
+ max-width: 100%;
+ box-sizing: border-box;
+}
+.ooo{
+display: flex;
+justify-content: center;
+}
+h1{
+  color: blue;
+ text-align: center;
+ font-family: 'Raleway', sans-serif;
+ margin-bottom: 20px;
+}
+nav{
+margin: auto;
+width: 800px; ;
+height: 100px; ;
+}
+.topnav{
+  background-color: white;
+  font-size: 20px;
+  margin-top: 30px;
+    text-align: center;
+}
+.topnav a{
+  text-decoration: none;
+  color:blue ;
+  text-align: center;
+  padding: 14px 16px;
+  font-size:20px ;
+  
+}
+.topnav a:hover{
+  border-bottom: 2px solid blue;
+}
+
+@media screen  and (max-width: 768px){
+  .topnav a:not(:first-child){
+    display: none;
+  }
+  .topnav a.icon{
+    float: right;
+    margin-top: -17px;
+    display: block;
+    color:blue;
+  }
+  nav{
+    width: 100%;
+    height: 100px;
+  }
+}
+#slides {
+  position: relative;
+  height: 400px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+ }
+ 
+ .slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+ 
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+ }
+ 
+ .showing {
+  opacity: 1;
+  z-index: 2;
+ }
+ 
+ 
+ .slide {
+  
+  font-size: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+  width: 100%;
+  background-size:auto;
+  background-image: url(istockphoto-1241212860-612x612.jpg);
+  color: #fff;
+ }
+ 
+ .slide:nth-of-type(1) {
+  
+  background-image: url(istockphoto-1205919904-612x612.jpg);
+ }
+ .slide:nth-of-type(2) {
+  
+  background-image: url(istockphoto-1168451046-612x612.jpg);
+  color: black;
+ }
+ .slide:nth-of-type(3) {
+  
+  background-image: url(istockphoto-1207992614-612x612.jpg);
+ }
+ .slide:nth-of-type(4) {
+  
+  background-image: url(istockphoto-1211523600-612x612.jpg);
+ }
+ .abut {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  vertical-align: middle;
+  text-decoration: none;
+  border: .5em solid rgba(0,0,0,0);
+  border-radius: 50%;
+  color: black;
+  background: rgb(245,245,245);
+  box-shadow:
+   inset 0 -3px 10px rgba(255,255,255,1),
+   inset 0 3px 10px rgba(0,0,0,.4),
+   0 2px 4px rgba(0,0,0,.9);
+   margin-bottom: 5px;
+   margin-top: 5px;
+}
+
