@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="index.css" />
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+<title>Document</title>
+<script src="jquery.slim.min.js"></script>
+<script src="index.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <a href="index.html"><img class="graficlogo" src="лого.jpg" alt="logo"></a>
+    </div>
+    <nav>
+      <div class="topnav">
+        <a href="project.html"><b>Registration on our website</b></a>
+      </div>
+    </nav>
+  </header>
+
+	
+  <ul id="slides">
+	<li class="slide showing"></li>
+	<li class="slide"></li>
+	<li class="slide"></li>
+	<li class="slide"></li>
+	<li class="slide"></li>
+   </ul>
+   <div class="ooo">
+   <button class="abut" onclick="nextSlide()"></button>
+   </div>
+   
+   <script>
+   var slides = document.querySelectorAll('#slides .slide');
+   var currentSlide = 0;
+   function nextSlide() {
+	slides[currentSlide].className = 'slide';
+	currentSlide = (currentSlide+1)%slides.length;
+	slides[currentSlide].className = 'slide showing';
+   }
+   </script>
+   </body>
+   </html>
+   
